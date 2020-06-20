@@ -1,5 +1,2 @@
-import React from "react"
-
-export default function Home() {
-  return <div>Hello world!</div>
-}
+import index from './game_page/game_page';
+export default index;

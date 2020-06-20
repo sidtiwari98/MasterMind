@@ -1,2 +1,2 @@
 # MasterMind
-The popular mastermind game built on React
+The popular mastermind game built on Gatsby
