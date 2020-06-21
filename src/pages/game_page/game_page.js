@@ -8,16 +8,25 @@ const Game_page = () => {
 
   const [selectedColor, setSelectedColor] = useState("0");
 
+  const colorToGuess = {
+    0: "#F44E3B",
+    1: "#FE9200",
+    2: "#FCDC00",
+    3: "#2196f3"
+  };
+
   const getSelectedColorFromPalette = (color) => {
     setSelectedColor(color);
   };
+
+
 
   return (
     <Layout>
       {console.log(selectedColor)}
       <p>dsahhs ah</p>
       <ColorPalette colorSelectedFunction = {getSelectedColorFromPalette}/>
-      <Rows selectedColor = {selectedColor}/>
+      <Rows selectedColor = {selectedColor} initialColor = {colorToGuess}/>
     </Layout>
   )
 };

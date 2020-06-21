@@ -1,0 +1,9 @@
+.circle_scoring_pegs{
+height: 12px;
+width: 12px;
+border-radius: 50%;
+display: inline-block;
+margin: 2px;
+border-style: solid;
+border-color: darkgray;
+}

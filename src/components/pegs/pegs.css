@@ -7,3 +7,12 @@
     border-style: solid;
     border-color: darkgray;
 }
+
+.pegs_holder{
+    display: flex;
+    flex-direction: row;
+}
+
+.scoring_pegs_holder{
+    padding-left: 10px
+}
