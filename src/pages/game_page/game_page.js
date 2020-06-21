@@ -8,12 +8,20 @@ const Game_page = () => {
 
   const [selectedColor, setSelectedColor] = useState("0");
 
+  // const colorToGuess = {
+  //   0: "#F44E3B",
+  //   1: "#FE9200",
+  //   2: "#FCDC00",
+  //   3: "#2196f3"
+  // };
+
   const colorToGuess = {
     0: "#F44E3B",
-    1: "#FE9200",
-    2: "#FCDC00",
-    3: "#2196f3"
-  };
+    1: "#F44E3B",
+    2: "#F44E3B",
+    3: "#F44E3B"
+  }
+
 
   const getSelectedColorFromPalette = (color) => {
     setSelectedColor(color);
