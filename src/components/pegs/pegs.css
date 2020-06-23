@@ -3,7 +3,7 @@
     width: 25px;
     border-radius: 50%;
     display: inline-block;
-    margin: 2px;
+    margin: 5px;
     border-style: solid;
     border-color: darkgray;
 }
@@ -11,6 +11,7 @@
 .pegs_holder{
     display: flex;
     flex-direction: row;
+    padding: 10px;
 }
 
 .scoring_pegs_holder{

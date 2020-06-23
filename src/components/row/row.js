@@ -19,7 +19,7 @@ const Rows = (props) => {
     <div className={"rows_container"}>
       {
         [...Array(number_of_rows)].map((e, i) =>
-          <span id={'pegs_scoringPegs'+i} key={i} style = {{pointerEvents: setPointEvents(i, props.activeRow)}}
+          <span id={'pegs_scoringPegs'} key={i} style = {{pointerEvents: setPointEvents(i, props.activeRow)}}
           >
           <Pegs selectedColor={props.selectedColor} initialColor={props.initialColor}
                 rowChangeFunction={props.rowChangeFunction}/>
