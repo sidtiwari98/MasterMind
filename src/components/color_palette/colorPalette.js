@@ -14,7 +14,6 @@ const colors = [
 const ColorPalette = (props) => {
 
   const handleColorChange = (color) => {
-    console.log("the color is " + color);
     props.colorSelectedFunction(color)
   };
 

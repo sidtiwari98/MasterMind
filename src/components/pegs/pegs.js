@@ -6,10 +6,10 @@ const number_of_pegs = 4;
 
 const Pegs = (props) => {
   const [colorOfPegs, setColorOfPegs] = useState({
-    0: "#FFFFFF",
-    1: "#FFFFFF",
-    2: "#FFFFFF",
-    3: "#FFFFFF",
+    0: null,
+    1: null,
+    2: null,
+    3: null,
   });
 
   const handleClick = (color, selectedPeg) => {
@@ -19,7 +19,7 @@ const Pegs = (props) => {
   };
 
   return (
-    <div className={'pegs_holder'}>
+    <div className={'pegs_holder'} key = {props.key}>
       {
         [...Array(number_of_pegs)].map((e, i) =>
           <span className={'circle_pegs'} key={i} style={{backgroundColor: colorOfPegs[i]}}
@@ -27,7 +27,7 @@ const Pegs = (props) => {
           />
         )}
       <div className={"scoring_pegs_holder"}>
-        <ScoringPegs initialColor={props.initialColor} inputColor={colorOfPegs}/>
+        <ScoringPegs initialColor={props.initialColor} inputColor={colorOfPegs} rowChangeFunction = {props.rowChangeFunction}/>
       </div>
     </div>
   )
