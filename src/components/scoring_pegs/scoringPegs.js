@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useState, useEffect} from 'react'
 import './scoringPegs.css'
 
 const number_of_pegs = 4;
@@ -7,11 +7,15 @@ const ScoringPegs = (props) => {
 
 
   const [colorOfScoringPegs, setColorOfScoringPegs] = useState({
-    0: "#FFFFFF",
-    1: "#FFFFFF",
-    2: "#FFFFFF",
-    3: "#FFFFFF",
+    0: "white",
+    1: "white",
+    2: "white",
+    3: "white",
   });
+
+  useEffect(()=>{
+    handleRowChangeandSendPegsData(colorOfScoringPegs)
+  },[colorOfScoringPegs]);
 
   const handleClick = (initialColorAndPosition, inputColorAndPosition) => {
     let colorOfScoringPegsCopy = Object.assign({}, colorOfScoringPegs);
@@ -31,8 +35,6 @@ const ScoringPegs = (props) => {
     }
 
     //for color
-    console.log(">>>>>", initialColorAndPositionCopy)
-    console.log(">>>>>", inputColorAndPositionCopy);
     for (let keyInput in inputColorAndPositionCopy) {
       for (let keyInitial in initialColorAndPositionCopy) {
         if (inputColorAndPositionCopy[keyInput] === "" || initialColorAndPositionCopy[keyInitial] === "") {
@@ -57,11 +59,11 @@ const ScoringPegs = (props) => {
     }
 
     setColorOfScoringPegs(colorOfScoringPegsCopy);
-    handleRowChange()
+    // handleRowChangeandSendPegsData(colorOfScoringPegs)
   };
 
-  const handleRowChange = () => {
-    props.rowChangeFunction()
+  const handleRowChangeandSendPegsData = (colorOfScoringPegs) => {
+    props.rowChangeFunction(colorOfScoringPegs)
   };
 
   return (
