@@ -50,11 +50,11 @@ li {
 .social_media_links {
     color: white;
     text-decoration: none !important ;
-    box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
+    box-shadow: none !important ;
 }
 
 .social_media_links:hover {
-    box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
+    box-shadow: none !important ;
 }
 
 li:last-child {
