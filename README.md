@@ -2,7 +2,7 @@
 The popular MasterMind game (https://en.wikipedia.org/wiki/Mastermind_(board_game)) built on Gatsbyjs. 
 You can try it live here at https://sidtiwari98-mastermind.herokuapp.com/. 
 
-Objective of this repo is to also revise and learn new concepts on the frontend part related to web deveolopment using Reactjs and trying out popular frameworks, new features etc. 
+Objective of this repo is to also to revise and learn new concepts on the frontend part related to web deveolopment using Reactjs and trying out popular frameworks, new features etc. 
 
 # To-do 
 <ul>
@@ -11,7 +11,7 @@ Objective of this repo is to also revise and learn new concepts on the frontend 
 </ul>
 
 # Running locally 
-If you want to run this locally on your machine you can using either SSH or HTTPS.    
+If you want to run this locally on your machine you can ```git clone``` using either SSH or HTTPS.    
     
 then  
   
